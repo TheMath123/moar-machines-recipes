@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "wasd_machines",
+    "pattern": [
+        "###",
+        "I_O",
+        "###"
+    ],
+    "key": {
+        "#": "minecraft:cobblestone",
+        "_": "minecraft:diamond",
+        "O": "minecraft:dropper",
+        "I": "minecraft:comparator"
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:item_frame",
+        "components": {
+            "minecraft:item_name": "{\"fallback\":\"Placer\",\"translate\":\"wasd.machines.placer\", \"italic\":false}",
+            "minecraft:lore": [
+                "{\"fallback\":\"Places blocks in front of it.\",\"translate\": \"wasd.machines.placer.lore\", \"italic\":false, \"color\":blue}"
+            ],
+            "minecraft:custom_data": {
+                "wasd_custom_machine": 1
+            },
+            "entity_data": {
+                "id": "minecraft:item_frame",
+                "Tags": [
+                    "wasd.machine_block",
+                    "wasd.placer",
+                    "wasd.item_frame_block"
+                ],
+                "Facing": 1,
+                "Invulnerable": 1,
+                "Invisible": 1,
+                "Fixed": 1
+            },
+            "minecraft:item_model": "wasd:machine/placer"
+        }
+    }
+}

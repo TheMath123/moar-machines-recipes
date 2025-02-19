@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "wasd_machines",
+    "pattern": [
+        " I ",
+        "ICI",
+        " I "
+    ],
+    "key": {
+        "I": "minecraft:iron_ingot",
+        "C": "minecraft:composter"
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:item_frame",
+        "components": {
+            "minecraft:item_name": "{\"fallback\":\"Composter\",\"translate\":\"wasd.machines.composter\", \"italic\":false}",
+            "minecraft:lore": [
+                "{\"fallback\":\"Turns organics into dirt.\",\"translate\": \"wasd.machines.composter.lore\", \"italic\":false, \"color\":blue}"
+            ],
+            "minecraft:custom_data": {
+                "wasd_custom_machine": 1
+            },
+            "entity_data": {
+                "id": "minecraft:item_frame",
+                "Tags": [
+                    "wasd.machine_block",
+                    "wasd.composter",
+                    "wasd.item_frame_block"
+                ],
+                "Facing": 1,
+                "Invulnerable": 1,
+                "Invisible": 1,
+                "Fixed": 1
+            },
+            "minecraft:item_model": "wasd:machine/composter"
+        }
+    }
+}

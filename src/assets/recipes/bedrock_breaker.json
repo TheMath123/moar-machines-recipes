@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "wasd_machines",
+    "pattern": [
+        "###",
+        "OSO",
+        "#D#"
+    ],
+    "key": {
+        "#": "minecraft:obsidian",
+        "S": "minecraft:nether_star",
+        "D": "minecraft:dragon_breath",
+        "O": "minecraft:diamond_block"
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:item_frame",
+        "components": {
+            "minecraft:item_name": "{\"fallback\":\"Bedrock Breaker\",\"translate\":\"wasd.machines.bedrock_breaker\", \"italic\":false}",
+            "minecraft:lore": [
+                "{\"fallback\":\"Can break bedrock below it when fueled by pearls.\",\"translate\": \"wasd.machines.bedrock_breaker.lore\", \"italic\":false, \"color\":blue}"
+            ],
+            "minecraft:custom_data": {
+                "wasd_custom_machine": 1
+            },
+            "entity_data": {
+                "id": "minecraft:item_frame",
+                "Tags": [
+                    "wasd.machine_block",
+                    "wasd.bedrock_breaker",
+                    "wasd.item_frame_block"
+                ],
+                "Facing": 1,
+                "Invulnerable": 1,
+                "Invisible": 1,
+                "Fixed": 1
+            },
+            "minecraft:item_model": "wasd:machine/bedrock_breaker"
+        }
+    }
+}

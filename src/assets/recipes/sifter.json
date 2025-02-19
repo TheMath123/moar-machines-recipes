@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "wasd_machines",
+    "pattern": [
+        "___",
+        "OBO",
+        "# #"
+    ],
+    "key": {
+        "#": "#minecraft:fences",
+        "O": "#minecraft:planks",
+        "_": "minecraft:string",
+        "B": "minecraft:bowl"
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:item_frame",
+        "components": {
+            "minecraft:item_name": "{\"fallback\":\"Sifter\",\"translate\":\"wasd.machines.sifter\", \"italic\":false}",
+            "minecraft:lore": [
+                "{\"fallback\":\"Sifts for valuables hidden inside blocks.\",\"translate\": \"wasd.machines.sifter.lore\", \"italic\":false, \"color\":blue}"
+            ],
+            "minecraft:custom_data": {
+                "wasd_custom_machine": 1
+            },
+            "entity_data": {
+                "id": "minecraft:item_frame",
+                "Tags": [
+                    "wasd.machine_block",
+                    "wasd.sifter",
+                    "wasd.item_frame_block"
+                ],
+                "Facing": 1,
+                "Invulnerable": 1,
+                "Invisible": 1,
+                "Fixed": 1
+            },
+            "minecraft:item_model": "wasd:machine/sifter"
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "wasd_machines",
+    "pattern": [
+        "###",
+        "D_D",
+        "OEO"
+    ],
+    "key": {
+        "#": "minecraft:netherite_ingot",
+        "_": "minecraft:nether_star",
+        "D": "minecraft:diamond_block",
+        "O": "minecraft:obsidian",
+        "E": "minecraft:ender_eye"
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:item_frame",
+        "components": {
+            "minecraft:item_name": "{\"fallback\":\"Chunk Loader\",\"translate\":\"wasd.machines.chunk_loader\", \"italic\":false}",
+            "minecraft:lore": [
+                "{\"fallback\":\"Loads the chunk it is placed in. (and more, see config)\",\"translate\": \"wasd.machines.chunk_loader.lore\", \"italic\":false, \"color\":blue}"
+            ],
+            "minecraft:custom_data": {
+                "wasd_custom_machine": 1
+            },
+            "entity_data": {
+                "id": "minecraft:item_frame",
+                "Tags": [
+                    "wasd.machine_block",
+                    "wasd.chunk_loader",
+                    "wasd.item_frame_block"
+                ],
+                "Facing": 1,
+                "Invulnerable": 1,
+                "Invisible": 1,
+                "Fixed": 1
+            },
+            "minecraft:item_model": "wasd:machine/chunk_loader"
+        }
+    }
+}

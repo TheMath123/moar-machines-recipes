@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "wasd_machines",
+    "pattern": [
+        "#_#",
+        "ODO",
+        "#B#"
+    ],
+    "key": {
+        "#": "minecraft:obsidian",
+        "O": "minecraft:cauldron",
+        "_": "minecraft:polished_deepslate",
+        "B": "minecraft:piston",
+        "D": "minecraft:dispenser"
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:item_frame",
+        "components": {
+            "minecraft:item_name": "{\"fallback\":\"Ore Extruder\",\"translate\":\"wasd.machines.ore_extruder\", \"italic\":false}",
+            "minecraft:lore": [
+                "{\"fallback\":\"Turns water and lava into ores randomly.\",\"translate\": \"wasd.machines.ore_extruder.lore\", \"italic\":false, \"color\":blue}"
+            ],
+            "minecraft:custom_data": {
+                "wasd_custom_machine": 1
+            },
+            "entity_data": {
+                "id": "minecraft:item_frame",
+                "Tags": [
+                    "wasd.machine_block",
+                    "wasd.ore_extruder",
+                    "wasd.item_frame_block"
+                ],
+                "Facing": 1,
+                "Invulnerable": 1,
+                "Invisible": 1,
+                "Fixed": 1
+            },
+            "minecraft:item_model": "wasd:machine/ore_extruder"
+        }
+    }
+}

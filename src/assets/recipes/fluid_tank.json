@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "wasd_machines",
+    "pattern": [
+        "#G#",
+        "GCG",
+        "#G#"
+    ],
+    "key": {
+        "#": "minecraft:polished_deepslate_wall",
+        "G": "minecraft:glass",
+        "C": "minecraft:cauldron"
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:item_frame",
+        "components": {
+            "minecraft:item_name": "{\"fallback\":\"Fluid Tank\",\"translate\":\"wasd.machines.fluid_tank\", \"italic\":false}",
+            "minecraft:lore": [
+                "{\"fallback\":\"Can store liquids.\",\"translate\": \"wasd.machines.fluid_tank.lore\", \"italic\":false, \"color\":blue}"
+            ],
+            "minecraft:custom_data": {
+                "wasd_custom_machine": 1
+            },
+            "entity_data": {
+                "id": "minecraft:item_frame",
+                "Tags": [
+                    "wasd.machine_block",
+                    "wasd.fluid_tank",
+                    "wasd.item_frame_block"
+                ],
+                "Facing": 1,
+                "Invulnerable": 1,
+                "Invisible": 1,
+                "Fixed": 1
+            },
+            "minecraft:item_model": "wasd:machine/fluid_tank"
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "wasd_machines",
+    "pattern": [
+        " D ",
+        "O_O",
+        "#I#"
+    ],
+    "key": {
+        "#": "minecraft:iron_ingot",
+        "_": "minecraft:obsidian",
+        "O": "minecraft:diamond_pickaxe",
+        "I": "minecraft:iron_block",
+        "D": "minecraft:diamond"
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:item_frame",
+        "components": {
+            "minecraft:item_name": "{\"fallback\":\"Crusher\",\"translate\":\"wasd.machines.crusher\", \"italic\":false}",
+            "minecraft:lore": [
+                "{\"fallback\":\"Crushes blocks into other blocks. Increases ore output.\",\"translate\": \"wasd.machines.crusher.lore\", \"italic\":false, \"color\":blue}"
+            ],
+            "minecraft:custom_data": {
+                "wasd_custom_machine": 1
+            },
+            "entity_data": {
+                "id": "minecraft:item_frame",
+                "Tags": [
+                    "wasd.machine_block",
+                    "wasd.crusher",
+                    "wasd.item_frame_block"
+                ],
+                "Facing": 1,
+                "Invulnerable": 1,
+                "Invisible": 1,
+                "Fixed": 1
+            },
+            "minecraft:item_model": "wasd:machine/item/crusher"
+        }
+    }
+}

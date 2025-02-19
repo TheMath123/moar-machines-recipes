@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "wasd_machines",
+    "pattern": [
+        "###",
+        "O_O",
+        "###"
+    ],
+    "key": {
+        "#": "minecraft:cobblestone",
+        "_": "minecraft:ender_pearl",
+        "O": "minecraft:dispenser"
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:item_frame",
+        "components": {
+            "minecraft:item_name": "{\"fallback\":\"Pearl Thrower\",\"translate\":\"wasd.machines.pearl_thrower\", \"italic\":false}",
+            "minecraft:lore": [
+                "{\"fallback\":\"Throws ender pearls. Teleports whoever placed the block.\",\"translate\": \"wasd.machines.pearl_thrower.lore\", \"italic\":false, \"color\":blue}"
+            ],
+            "minecraft:custom_data": {
+                "wasd_custom_machine": 1
+            },
+            "entity_data": {
+                "id": "minecraft:item_frame",
+                "Tags": [
+                    "wasd.machine_block",
+                    "wasd.pearl_thrower",
+                    "wasd.item_frame_block"
+                ],
+                "Facing": 1,
+                "Invulnerable": 1,
+                "Invisible": 1,
+                "Fixed": 1
+            },
+            "minecraft:item_model": "wasd:machine/pearl_thrower"
+        }
+    }
+}

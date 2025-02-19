@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "wasd_machines",
+    "pattern": [
+        "###",
+        " _ ",
+        "OOO"
+    ],
+    "key": {
+        "#": "minecraft:iron_ingot",
+        "_": "minecraft:water_bucket",
+        "O": "minecraft:bone_block"
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:item_frame",
+        "components": {
+            "minecraft:item_name": "{\"fallback\":\"Sprinkler\",\"translate\":\"wasd.machines.sprinkler\", \"italic\":false}",
+            "minecraft:lore": [
+                "{\"fallback\":\"Grows crops in an area around it.\",\"translate\": \"wasd.machines.sprinkler.lore\", \"italic\":false, \"color\":blue}"
+            ],
+            "minecraft:custom_data": {
+                "wasd_custom_machine": 1
+            },
+            "entity_data": {
+                "id": "minecraft:item_frame",
+                "Tags": [
+                    "wasd.machine_block",
+                    "wasd.sprinkler",
+                    "wasd.item_frame_block"
+                ],
+                "Facing": 1,
+                "Invulnerable": 1,
+                "Invisible": 1,
+                "Fixed": 1
+            },
+            "minecraft:item_model": "wasd:machine/sprinkler"
+        }
+    }
+}

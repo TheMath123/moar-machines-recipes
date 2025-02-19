@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "wasd_machines",
+    "pattern": [
+        "###",
+        "GGG",
+        "###"
+    ],
+    "key": {
+        "#": "minecraft:polished_deepslate_slab",
+        "G": "minecraft:glass"
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:item_frame",
+        "components": {
+            "minecraft:item_name": "{\"fallback\":\"Fluid Pipe\",\"translate\":\"wasd.machines.fluid_pipe\", \"italic\":false}",
+            "minecraft:lore": [
+                "{\"fallback\":\"A pipe for moving liquids.\",\"translate\": \"wasd.machines.fluid_pipe.lore\", \"italic\":false, \"color\":blue}"
+            ],
+            "minecraft:custom_data": {
+                "wasd_custom_machine": 1
+            },
+            "entity_data": {
+                "id": "minecraft:item_frame",
+                "Tags": [
+                    "wasd.machine_block",
+                    "wasd.fluid_pipe",
+                    "wasd.item_frame_block"
+                ],
+                "Facing": 1,
+                "Invulnerable": 1,
+                "Invisible": 1,
+                "Fixed": 1
+            },
+            "minecraft:item_model": "wasd:machine/fluid_pipe"
+        }
+    }
+}

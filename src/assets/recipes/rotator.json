@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "wasd_machines",
+    "pattern": [
+        "###",
+        "O_O",
+        "###"
+    ],
+    "key": {
+        "#": "minecraft:cobblestone",
+        "_": "minecraft:copper_block",
+        "O": "minecraft:copper_ingot"
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:item_frame",
+        "components": {
+            "minecraft:item_name": "{\"fallback\":\"Block Rotator\",\"translate\":\"wasd.machines.rotator\", \"italic\":false}",
+            "minecraft:lore": [
+                "{\"fallback\":\"Rotates the blocks in front of you.\",\"translate\": \"wasd.machines.rotator.lore\", \"italic\":false, \"color\":blue}"
+            ],
+            "minecraft:custom_data": {
+                "wasd_custom_machine": 1
+            },
+            "entity_data": {
+                "id": "minecraft:item_frame",
+                "Tags": [
+                    "wasd.machine_block",
+                    "wasd.rotator",
+                    "wasd.item_frame_block"
+                ],
+                "Facing": 1,
+                "Invulnerable": 1,
+                "Invisible": 1,
+                "Fixed": 1
+            },
+            "minecraft:item_model": "wasd:machine/rotator"
+        }
+    }
+}
