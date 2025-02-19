@@ -1,7 +1,11 @@
 {
-  "name": "moar-machines",
-  "version": "0.1.0",
-  "private": true,
+  "name": "moar-machines-recipes",
+  "version": "1.0.0",
+  "license": "GPL-3.0-only",
+  "author": {
+    "name": "TheMath123",
+    "email": "contact@matheuspa.com"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
