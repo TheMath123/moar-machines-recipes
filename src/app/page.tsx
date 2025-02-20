@@ -4,11 +4,15 @@ import * as React from 'react';
 import { RecipeDisplay } from './components/recipe-display';
 import { recipes } from '@/assets/recipes';
 import { formatName } from '@/utils/format-name';
-import { Recipe } from '@/@types/recipe';
 import Link from 'next/link';
+import { useRouter, useSearchParams } from 'next/navigation';
+
 
 export default function Home() {
-  const [selectedRecipe, setSelectedRecipe] = React.useState<Recipe>(recipes.bedrock_breaker);
+  const searchParams = useSearchParams()
+  const item = searchParams.get('item')
+  const itemId = item ?? 'bedrock_breaker'
+  const router = useRouter()
 
   return (
     <main className="flex flex-col items-center justify-between p-4 h-dvh gap-4">
@@ -22,8 +26,9 @@ export default function Home() {
           <label htmlFor="select-block" className='font-medium'>Machine</label>
           <select
             id='select-block'
-            onChange={(e) => setSelectedRecipe(recipes[e.target.value])}
-            className="p-4 border border-foreground/10 bg-background rounded-md"
+            value={itemId}
+            onChange={(e) => router.replace(`?item=${e.target.value}`)}
+            className="p-4 border dark:border-gray-600 border-gray-400 bg-background rounded-md"
           >
             {Object.keys(recipes).map((key) => (
               <option key={key} value={key}>
@@ -33,7 +38,7 @@ export default function Home() {
           </select>
         </div>
 
-        <RecipeDisplay recipe={selectedRecipe} />
+        <RecipeDisplay id={itemId} />
       </section>
 
       <footer className='flex flex-col gap-4 items-center text-sm'>

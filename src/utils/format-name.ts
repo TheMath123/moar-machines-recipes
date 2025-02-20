@@ -1,7 +1,11 @@
 import { capitalize } from "./string";
 
 function formatName(name: string) {
-  return capitalize(name.replaceAll(/_/g, " ").replaceAll(".", " "));
+  if (!name) return "";
+  let str = name.replaceAll("_", " ");
+  str = str.replaceAll(".", " ");
+  str = capitalize(str);
+  return str;
 }
 
 export { formatName };
